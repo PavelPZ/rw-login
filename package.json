@@ -2,6 +2,7 @@
   "name": "rw-login",
   "version": "1.0.0",
   "jspm": {
+    "main": "lib/index.js",
     "dependencies": {
       "classnames": "npm:classnames@^2.2.5",
       "react": "npm:react@^15.3.2",
