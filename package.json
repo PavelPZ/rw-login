@@ -3,7 +3,7 @@
   "version": "1.0.2",
   "jspm": {
     "name": "rw-login",
-    "main": "src/index",
+    "main": "index",
     "dependencies": {
       "classnames": "npm:classnames@^2.2.5",
       "core-js": "npm:core-js@^2.4.1",

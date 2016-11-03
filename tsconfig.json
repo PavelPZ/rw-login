@@ -8,7 +8,7 @@
     "inlineSourceMap": true,
     "inlineSources": true,
     "declaration": true,
-    "declarationDir": "typings/src",
+    "declarationDir": "tsd",
     "baseUrl": ".",
     "paths": {
       "rxjs/*": [ "jspm_packages/npm/rxjs@5.0.0-rc.1/*" ]
@@ -22,6 +22,6 @@
 
   "exclude": [
     "jspm_packages/",
-    "typings/src/**/*"
+    "tsd/**/*"
   ]
 }
