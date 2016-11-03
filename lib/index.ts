@@ -1,1 +1,0 @@
-﻿export function about() { return alert('About rw-login'); }

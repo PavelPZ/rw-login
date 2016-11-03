@@ -9,10 +9,19 @@
     "inlineSources": true,
     "declaration": true,
     "declarationDir": "typings/rw-login",
+    "baseUrl": ".",
+    "paths": {
+      "rxjs/*": [ "jspm_packages/npm/rxjs@5.0.0-rc.1/*" ]
+    },
+    "lib": [
+      "dom",
+      "es6"
+    ],
     "jsx": "react"
   },
+
   "exclude": [
-    "typings/rw-login/index.d.ts",
-    "jspm_packages"
+    "jspm_packages/",
+    "typings/rw-login/**/*"
   ]
 }

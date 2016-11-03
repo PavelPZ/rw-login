@@ -1,1 +1,1 @@
-export declare function about(): void;
+export declare function about(): string;
