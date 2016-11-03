@@ -44,7 +44,8 @@
     <TypeScriptCompile Include="typings\classnames\classnames.d.ts" />
     <TypeScriptCompile Include="typings\react\react-dom.d.ts" />
     <TypeScriptCompile Include="typings\react\react.d.ts" />
-    <TypeScriptCompile Include="typings\rw-login\index.d.ts" />
+    <TypeScriptCompile Include="typings\src\index.d.ts" />
+    <TypeScriptCompile Include="typings\src\test\index.d.ts" />
     <TypeScriptCompile Include="typings\tsd.d.ts" />
   </ItemGroup>
   <PropertyGroup>

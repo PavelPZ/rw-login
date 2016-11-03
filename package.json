@@ -1,4 +1,6 @@
 {
+  "name": "rw-login",
+  "version": "1.0.2",
   "jspm": {
     "name": "rw-login",
     "main": "src/index",
@@ -47,4 +49,5 @@
       }
     }
   }
-}
+}
+

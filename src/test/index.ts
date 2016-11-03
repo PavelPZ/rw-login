@@ -1,3 +1,3 @@
 ﻿export default function test(): string {
-  return 'test';
+  return 'test WWW';
 }
