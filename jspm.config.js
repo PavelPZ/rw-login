@@ -1,12 +1,8 @@
 SystemJS.config({
-  browserConfig: {
-    "paths": {
-      "npm:": "/jspm_packages/npm/"
-    }
-  },
   nodeConfig: {
     "paths": {
-      "npm:": "jspm_packages/npm/"
+      "npm:": "jspm_packages/npm/",
+      "local:": "jspm_packages/local/"
     }
   }
 });
@@ -14,7 +10,8 @@ SystemJS.config({
 SystemJS.config({
   packageConfigPaths: [
     "npm:@*/*.json",
-    "npm:*.json"
+    "npm:*.json",
+    "local:*.json"
   ],
   map: {
     "assert": "npm:jspm-nodelibs-assert@0.2.0",
@@ -34,6 +31,7 @@ SystemJS.config({
     "process": "npm:jspm-nodelibs-process@0.2.0",
     "react": "npm:react@15.3.2",
     "react-dom": "npm:react-dom@15.3.2",
+    "rw-lib": "local:rw-lib@1.0.0",
     "rxjs": "npm:rxjs@5.0.0-rc.1",
     "stream": "npm:jspm-nodelibs-stream@0.2.0",
     "string_decoder": "npm:jspm-nodelibs-string_decoder@0.2.0",
@@ -137,7 +135,7 @@ SystemJS.config({
     },
     "npm:jspm-nodelibs-http@0.2.0": {
       "map": {
-        "http-browserify": "npm:stream-http@2.4.1"
+        "http-browserify": "npm:stream-http@2.5.0"
       }
     },
     "npm:browserify-zlib@0.1.4": {
@@ -151,15 +149,6 @@ SystemJS.config({
         "isarray": "npm:isarray@1.0.0",
         "base64-js": "npm:base64-js@1.2.0",
         "ieee754": "npm:ieee754@1.1.8"
-      }
-    },
-    "npm:stream-http@2.4.1": {
-      "map": {
-        "inherits": "npm:inherits@2.0.3",
-        "readable-stream": "npm:readable-stream@2.1.5",
-        "builtin-status-codes": "npm:builtin-status-codes@2.0.0",
-        "to-arraybuffer": "npm:to-arraybuffer@1.0.1",
-        "xtend": "npm:xtend@4.0.1"
       }
     },
     "npm:url@0.11.0": {
@@ -332,6 +321,23 @@ SystemJS.config({
       "map": {
         "inherits": "npm:inherits@2.0.3",
         "minimalistic-assert": "npm:minimalistic-assert@1.0.0"
+      }
+    },
+    "local:rw-lib@1.0.0": {
+      "map": {
+        "rxjs": "npm:rxjs@5.0.0-rc.1",
+        "core-js": "npm:core-js@2.4.1",
+        "react-dom": "npm:react-dom@15.3.2",
+        "classnames": "npm:classnames@2.2.5"
+      }
+    },
+    "npm:stream-http@2.5.0": {
+      "map": {
+        "to-arraybuffer": "npm:to-arraybuffer@1.0.1",
+        "readable-stream": "npm:readable-stream@2.1.5",
+        "xtend": "npm:xtend@4.0.1",
+        "builtin-status-codes": "npm:builtin-status-codes@2.0.0",
+        "inherits": "npm:inherits@2.0.3"
       }
     }
   }

@@ -24,6 +24,7 @@
   <ItemGroup>
     <Content Include=".gitignore" />
     <Content Include="index.html" />
+    <Content Include="jspm.browser.js" />
     <Content Include="jspm.config.js" />
     <Content Include="web.config" />
   </ItemGroup>
