@@ -23,7 +23,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
-    <Content Include="index.html" />
+    <Content Include="login.html" />
+    <Content Include="test.html" />
     <Content Include="jspm.browser.js" />
     <Content Include="jspm.config.js" />
     <Content Include="web.config" />
@@ -43,11 +44,20 @@
     <TypeScriptCompile Include="index.ts" />
     <TypeScriptCompile Include="test\index.tsx" />
     <TypeScriptCompile Include="typings\classnames\classnames.d.ts" />
+    <TypeScriptCompile Include="typings\cldr.js\cldr.js.d.ts" />
+    <TypeScriptCompile Include="typings\globalize\globalize.d.ts" />
     <TypeScriptCompile Include="typings\react\react-dom.d.ts" />
     <TypeScriptCompile Include="typings\react\react.d.ts" />
-    <TypeScriptCompile Include="tsd\index.d.ts" />
-    <TypeScriptCompile Include="tsd\test\index.d.ts" />
-    <TypeScriptCompile Include="typings\tsd.d.ts" />
+    <None Include="typings\tsd.d.ts_" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="tsd\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\rw-lib\rw-lib.csproj">
+      <Project>{7d74022d-e8c2-4912-b8ce-f22e84d9cdbf}</Project>
+      <Name>rw-lib</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
